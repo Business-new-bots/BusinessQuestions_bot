@@ -1,0 +1,9 @@
+[phases.setup]
+nixPkgs = ["maven"]
+
+[phases.build]
+cmds = ["mvn clean package -DskipTests"]
+
+[start]
+cmd = "java -jar target/business-through-awareness-0.0.1-SNAPSHOT.jar"
+
