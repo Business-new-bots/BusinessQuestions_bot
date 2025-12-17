@@ -4,8 +4,8 @@ spring:
 
 telegram:
   bot:
-    token: ${TELEGRAM_BOT_TOKEN:}
-    username: ${TELEGRAM_BOT_USERNAME:}
+    token: ${TELEGRAM_BOT_TOKEN:8594709114:AAFtIabhbCsU8oqNIp8CGYixqRMncqHWudI}
+    username: ${TELEGRAM_BOT_USERNAME:BusinessQuestions_bot}
     admin-usernames: ${TELEGRAM_ADMIN_USERNAMES:} # Список username админов через запятую (без @)
 
 categories:

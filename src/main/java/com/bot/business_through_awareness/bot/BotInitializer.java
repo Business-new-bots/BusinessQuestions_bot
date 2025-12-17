@@ -25,7 +25,10 @@ public class BotInitializer implements CommandLineRunner {
             System.out.println("Telegram bot успешно зарегистрирован!");
         } catch (TelegramApiException e) {
             System.err.println("Ошибка регистрации бота: " + e.getMessage());
+            System.err.println("Проверьте переменные окружения: TELEGRAM_BOT_TOKEN и TELEGRAM_BOT_USERNAME");
             e.printStackTrace();
+            // Не завершаем приложение, чтобы можно было увидеть ошибку в логах
+            throw new RuntimeException("Не удалось зарегистрировать бота. Проверьте конфигурацию.", e);
         }
     }
 }

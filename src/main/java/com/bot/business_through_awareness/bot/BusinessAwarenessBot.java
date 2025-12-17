@@ -50,8 +50,16 @@ public class BusinessAwarenessBot extends TelegramLongPollingBot {
             ExecutorService executorService,
             QuestionService questionService,
             AdminFileService adminFileService) {
-        this.botToken = botToken;
-        this.botUsername = botUsername;
+        // Валидация обязательных параметров
+        if (botToken == null || botToken.trim().isEmpty()) {
+            throw new IllegalStateException("TELEGRAM_BOT_TOKEN не установлен! Установите переменную окружения TELEGRAM_BOT_TOKEN.");
+        }
+        if (botUsername == null || botUsername.trim().isEmpty()) {
+            throw new IllegalStateException("TELEGRAM_BOT_USERNAME не установлен! Установите переменную окружения TELEGRAM_BOT_USERNAME.");
+        }
+        
+        this.botToken = botToken.trim();
+        this.botUsername = botUsername.trim();
         this.userService = userService;
         this.categoryService = categoryService;
         this.groupService = groupService;
