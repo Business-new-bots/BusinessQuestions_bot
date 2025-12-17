@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: business-through-awareness
+
+telegram:
+  bot:
+    token: ${TELEGRAM_BOT_TOKEN:}
+    username: ${TELEGRAM_BOT_USERNAME:}
+    admin-usernames: ${TELEGRAM_ADMIN_USERNAMES:} # Список username админов через запятую (без @)
+
+categories:
+  file:
+    path: ${CATEGORIES_FILE_PATH:./categories.json} # Путь к файлу с категориями (относительно корня проекта)
+
+admins:
+  file:
+    path: ${ADMINS_FILE_PATH:./admins.json} # Путь к файлу с админами (относительно корня проекта)
+
+groups:
+  file:
+    path: ${GROUPS_FILE_PATH:./groups.json} # Путь к файлу с группами (относительно корня проекта)
+
+executors:
+  file:
+    path: ${EXECUTORS_FILE_PATH:./executor.json} # Путь к файлу с исполнителями (относительно корня проекта)
+
+users:
+  file:
+    path: ${USERS_FILE_PATH:./users.json} # Путь к файлу с пользователями (относительно корня проекта)

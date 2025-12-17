@@ -1,0 +1,31 @@
+[ {
+  "id" : 687843421,
+  "firstName" : "Яна",
+  "lastName" : "Бухтиярова",
+  "username" : "yana19912021y",
+  "registeredAt" : [ 2025, 12, 12, 8, 14, 7, 143532800 ],
+  "currentCategoryId" : 5,
+  "currentQuestionId" : null,
+  "state" : "WAITING_FOR_QUESTION",
+  "isAdmin" : true
+}, {
+  "id" : 5157630098,
+  "firstName" : "Shuu",
+  "lastName" : null,
+  "username" : "shuu20122",
+  "registeredAt" : [ 2025, 12, 9, 16, 51, 8, 805753200 ],
+  "currentCategoryId" : 5,
+  "currentQuestionId" : null,
+  "state" : "START",
+  "isAdmin" : true
+}, {
+  "id" : 947303898,
+  "firstName" : "Pavel",
+  "lastName" : "Bukhtsiyarau",
+  "username" : "puh2012",
+  "registeredAt" : [ 2025, 12, 15, 19, 32, 17, 96085200 ],
+  "currentCategoryId" : null,
+  "currentQuestionId" : null,
+  "state" : "START",
+  "isAdmin" : true
+} ]
